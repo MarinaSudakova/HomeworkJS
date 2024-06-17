@@ -59,6 +59,42 @@ class Library {
   }
 }
 
+// Вариант преподавателя
+
+// class Library {
+//   #books;
+
+//   constructor(initialBooks) {
+//       if (new Set(initialBooks).size !== initialBooks.length) {
+//           throw new Error("Initial books list contains duplicates.");
+//       }
+//       this.#books = initialBooks;
+//   }
+
+//   get allBooks() {
+//       return this.#books;
+//   }
+
+//   addBook(title) {
+//       if (this.#books.includes(title)) {
+//           throw new Error("Book already exists in the library.");
+//       }
+//       this.#books.push(title);
+//   }
+
+//   removeBook(title) {
+//       const bookIndex = this.#books.indexOf(title);
+//       if (bookIndex === -1) {
+//           throw new Error("Book not found in the library.");
+//       }
+//       this.#books.splice(bookIndex, 1);
+//   }
+
+//   hasBook(title) {
+//       return this.#books.includes(title);
+//   }
+//   }
+
 const newLibrary = new Library([]);
 console.log(newLibrary.allBooks);
 

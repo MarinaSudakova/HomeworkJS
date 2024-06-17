@@ -51,3 +51,40 @@ button.addEventListener("click", function (e) {
     answer.textContent = error.message;
   }
 });
+
+// вариант преподавателя
+
+// document.getElementById('submitReview').addEventListener('click', addReview);
+
+// const initialData = [
+// // Ваш initialData массив
+// ];
+
+// function loadInitialReviews() {
+// initialData.forEach(product => {
+// product.reviews.forEach(review => {
+// addReviewToContainer(review.text);
+// });
+// });
+// }
+
+// function addReview() {
+// const reviewText = document.getElementById('reviewInput').value;
+// try {
+// if (reviewText.length < 50 || reviewText.length > 500) {
+// throw new Error('Отзыв должен содержать от 50 до 500 символов');
+// }
+// addReviewToContainer(reviewText);
+// } catch (error) {
+// alert(error.message);
+// }
+// }
+
+// function addReviewToContainer(text) {
+// const container = document.getElementById('reviewsContainer');
+// const reviewElement = document.createElement('div');
+// reviewElement.textContent = text;
+// container.appendChild(reviewElement);
+// }
+
+// window.onload = loadInitialReviews;
