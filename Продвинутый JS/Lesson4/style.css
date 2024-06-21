@@ -1,0 +1,9 @@
+
+
+.my-title {
+    width: 100%;
+    text-align: center;
+    background-color: yellow;
+    margin: 10px;
+    display: inline-block;
+}
