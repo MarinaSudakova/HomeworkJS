@@ -96,8 +96,9 @@ listLessons.addEventListener("click", ({ target }) => {
         registration.removeAttribute("disabled");
         registration.textContent = "Записаться на занятие";
       }
-    } else {
-      target.setAttribute("disabled", "");
+      if (counterRegistration === 0) {
+        target.setAttribute("disabled", "");
+      }
     }
   }
 });
