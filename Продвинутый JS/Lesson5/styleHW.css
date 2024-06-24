@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+svg {
+    fill: black;
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.box-buttons {
+    padding-top: 20px;
+}
+
+.box-picture {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url('photo_2021-06-08_16-03-00.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box-navigation {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+
