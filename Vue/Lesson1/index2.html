@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Task2.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="app" class="demo">
+        <button @click="nameButton">{{ name }}</button>
+
+        <hr>
+        <ul>
+            <li v-for="item in listValues" :key="index">
+                <h4>{{ item }}</h4><button @click="deleteValue">Удалить</button>
+            </li>
+        </ul>
+        <br>
+        <button @click="addValue">Добавить</button>
+
+
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</body>
+
+</html>
