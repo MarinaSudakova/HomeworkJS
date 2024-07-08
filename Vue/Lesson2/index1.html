@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Task1.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+
+        <ul>
+            <button @click="sortProductsUp">Сортировка по убыванию</button>
+            <button @click="sortProductsDown">Сортировка по возрастанию</button>
+
+
+            <ul>
+                <li v-for="product in listProducts" :key="product.id">
+                    <h4>{{ product.name }}</h4>
+                    <h4>Цена {{ product.price }}</h4>
+                </li>
+            </ul>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</body>
+
+</html>
